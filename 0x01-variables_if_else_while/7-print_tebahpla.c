@@ -1,14 +1,19 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - Prints the lowercase alphabet in reverse order
+ *
+ * Return: Always 0 for success
+ */
 int main(void)
 {
-		int n;
+	char c;
 
-			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					/* your code goes there */
-					return (0);
+	for (c = 'z'; c >= 'a'; c--)
+	{
+		putchar(c);
+	}
+
+	putchar('\n');
+	return (0);
 }
