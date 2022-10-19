@@ -1,14 +1,19 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - Prints numbers of base 16
+ *
+ * Return: Always 0 for success
+ */
 int main(void)
 {
-		int n;
+	int digit;
 
-			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					/* your code goes there */
-					return (0);
+	for (digit = '0'; digit <= '9'; digit++)
+		putchar(digit);
+
+	for (digit = 'a'; digit <= 'f'; digit++)
+		putchar(digit);
+	putchar('\n');
+	return (0);
 }
