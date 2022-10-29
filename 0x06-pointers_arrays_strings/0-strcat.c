@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcat - function appends strings
+ * *_strcat - function commute strings
  * @dest: param pointer to a char
  * @src: param pointer to a char
  * Return: return value of dest
@@ -9,24 +9,24 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int a;
-	int b;
+	int i;
+	int j;
 
-	a = 0;
-	b = 0;
+	i = 0;
+	j = 0;
 
-	while (dest[a] != '\0')
+	while (dest[i] != '\0')
 	{
-		a++;
+		i++;
 	}
 
-	while (src[b] != '\0')
+	while (src[j] != '\0')
 	{
-		dest[b] = src[b];
-		b++;
-		a++;
+		dest[i] = src[j];
+		j++;
+		i++;
 	}
 
-	dest[a] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
