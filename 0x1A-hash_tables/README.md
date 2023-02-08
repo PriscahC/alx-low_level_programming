@@ -1,9 +1,5 @@
 x1A. C - Hash tables
 ====================
-
--   By Dev Nderitu
--   Weight: 1
-
 ### Data Structures
 
 Please use these data structures for this project:
